@@ -1,0 +1,738 @@
+<!-- saved from url=(0054)file:///C:/Users/USER/OneDrive/Desktop/site/index.html -->
+<html lang="mn"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body>```html
+
+
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Хөвсгөл Политехник Коллеж</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: #f4f7fb;
+            color: #222;
+        }
+
+        /* HEADER */
+        header {
+            background: #073b74;
+            color: white;
+            padding: 15px 7%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.2);
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .logo-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background: white;
+            color: #073b74;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 23px;
+            font-weight: bold;
+        }
+
+        .logo h2 {
+            font-size: 18px;
+        }
+
+        .logo p {
+            font-size: 12px;
+            opacity: 0.8;
+        }
+
+        nav {
+            display: flex;
+            gap: 25px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 15px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #69d2ff;
+        }
+
+        /* HERO */
+        .hero {
+            min-height: 600px;
+            display: flex;
+            align-items: center;
+            padding: 70px 8%;
+            background:
+                linear-gradient(rgba(0,45,90,0.75), rgba(0,45,90,0.75)),
+                url("");
+            background-size: cover;
+            background-position: center;
+            color: white;
+        }
+
+        .hero-content {
+            max-width: 750px;
+        }
+
+        .hero h1 {
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 span {
+            color: #6bd5ff;
+        }
+
+        .hero p {
+            font-size: 19px;
+            line-height: 1.7;
+            margin-bottom: 30px;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 14px 25px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn-main {
+            background: #08aeea;
+            color: white;
+        }
+
+        .btn-main:hover {
+            background: #078dcc;
+            transform: translateY(-3px);
+        }
+
+        .btn-white {
+            background: white;
+            color: #073b74;
+        }
+
+        .btn-white:hover {
+            transform: translateY(-3px);
+        }
+
+        /* GENERAL */
+        section {
+            padding: 70px 8%;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 45px;
+        }
+
+        .section-title h2 {
+            color: #073b74;
+            font-size: 34px;
+            margin-bottom: 10px;
+        }
+
+        .section-title p {
+            color: #666;
+        }
+
+        /* ABOUT */
+        .about {
+            background: white;
+        }
+
+        .about-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 45px;
+            align-items: center;
+        }
+
+        .about-image img {
+            width: 100%;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        }
+
+        .about-text h3 {
+            font-size: 28px;
+            color: #073b74;
+            margin-bottom: 20px;
+        }
+
+        .about-text p {
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 15px;
+        }
+
+        /* CARDS */
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+        }
+
+        .card-icon {
+            font-size: 45px;
+            margin-bottom: 15px;
+        }
+
+        .card h3 {
+            color: #073b74;
+            margin-bottom: 12px;
+        }
+
+        .card p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        /* MISSION */
+        .mission {
+            background: #073b74;
+            color: white;
+            text-align: center;
+        }
+
+        .mission h2 {
+            font-size: 34px;
+            margin-bottom: 20px;
+        }
+
+        .mission p {
+            max-width: 900px;
+            margin: auto;
+            line-height: 1.8;
+            font-size: 18px;
+        }
+
+        /* NEWS */
+        .news-card {
+            text-align: left;
+        }
+
+        .news-card .date {
+            color: #08aeea;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+        /* ADMISSION */
+        .admission {
+            background: #eef7ff;
+        }
+
+        .admission-box {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            max-width: 900px;
+            margin: auto;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+        }
+
+        .admission-box h3 {
+            color: #073b74;
+            margin-bottom: 20px;
+            font-size: 25px;
+        }
+
+        .admission-box ul {
+            list-style: none;
+            line-height: 2;
+        }
+
+        .admission-box li::before {
+            content: "✓";
+            color: #08aeea;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        /* CONTACT */
+        .contact {
+            background: white;
+        }
+
+        .contact-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .contact-item {
+            text-align: center;
+            padding: 30px;
+            background: #f4f7fb;
+            border-radius: 12px;
+        }
+
+        .contact-item h3 {
+            color: #073b74;
+            margin: 10px 0;
+        }
+
+        /* FOOTER */
+        footer {
+            background: #052b53;
+            color: white;
+            padding: 35px 8%;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 8px;
+            opacity: 0.85;
+        }
+
+        /* MOBILE */
+        @media(max-width: 850px) {
+
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 15px;
+            }
+
+            .hero h1 {
+                font-size: 36px;
+            }
+
+            .about-container,
+            .cards,
+            .contact-container {
+                grid-template-columns: 1fr;
+            }
+
+            section {
+                padding: 50px 5%;
+            }
+        }
+    </style>
+
+
+
+
+<!-- HEADER -->
+<header>
+
+    <div class="logo">
+
+        <div class="logo-icon">
+            ХП
+        </div>
+
+        <div>
+            <h2>Хөвсгөл Политехник Коллеж</h2>
+            <p>ШУТИС-ийн харьяа</p>
+        </div>
+
+    </div>
+
+    <nav>
+        <a href="file:///C:/Users/USER/OneDrive/Desktop/site/index.html#home">Нүүр</a>
+        <a href="file:///C:/Users/USER/OneDrive/Desktop/site/index.html#about">Бидний тухай</a>
+        <a href="file:///C:/Users/USER/OneDrive/Desktop/site/index.html#education">Сургалт</a>
+        <a href="file:///C:/Users/USER/OneDrive/Desktop/site/index.html#news">Мэдээ</a>
+        <a href="file:///C:/Users/USER/OneDrive/Desktop/site/index.html#admission">Элсэлт</a>
+        <a href="file:///C:/Users/USER/OneDrive/Desktop/site/index.html#contact">Холбоо барих</a>
+    </nav>
+
+</header>
+
+
+<!-- HERO -->
+<section class="hero" id="home">
+
+    <div class="hero-content">
+
+        <h1>
+            Ирээдүйгээ <span>мэргэжлээрээ</span> бүтээе
+        </h1>
+
+        <p>
+            Хөвсгөл аймаг дахь Политехник коллеж нь
+            мэргэжлийн болон техникийн боловсрол эзэмшүүлэх,
+            хөдөлмөрийн зах зээлд өрсөлдөхүйц ур чадвартай
+            мэргэжилтэн бэлтгэх зорилготой сургалтын байгууллага юм.
+        </p>
+
+        <div class="buttons">
+            <a href="file:///C:/Users/USER/OneDrive/Desktop/site/index.html#about" class="btn btn-main">
+                Сургуулийн тухай
+            </a>
+
+            <a href="file:///C:/Users/USER/OneDrive/Desktop/site/index.html#admission" class="btn btn-white">
+                Элсэлтийн мэдээлэл
+            </a>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ABOUT -->
+<section class="about" id="about">
+
+    <div class="section-title">
+        <h2>Бидний тухай</h2>
+        <p>Хөвсгөл аймаг дахь Политехник коллеж</p>
+    </div>
+
+    <div class="about-container">
+
+        <div class="about-image">
+
+            <img src="./Хөвсгөл Политехник Коллеж_files/photo-1562774053-701939374585" alt="Сургуулийн зураг">
+
+        </div>
+
+        <div class="about-text">
+
+            <h3>Мэргэжилтэй, ур чадвартай ирээдүй</h3>
+
+            <p>
+                Хөвсгөл аймаг дахь Политехник коллеж нь
+                ШУТИС-ийн харьяанд үйл ажиллагаа явуулдаг
+                мэргэжлийн болон техникийн боловсролын байгууллага юм.
+            </p>
+
+            <p>
+                Сургалт нь суралцагчдад онолын мэдлэгээс гадна
+                практик ур чадвар эзэмшүүлэхэд чиглэдэг.
+            </p>
+
+            <p>
+                Сургуулийн алсын хараа нь улс, олон улсын хөдөлмөрийн
+                зах зээлд өрсөлдөхүйц мэргэжлийн ур чадвартай
+                баялаг бүтээгчдийг бэлтгэхэд чиглэнэ.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- EDUCATION -->
+<section id="education">
+
+    <div class="section-title">
+
+        <h2>Сургалтын чиглэл</h2>
+
+        <p>
+            Суралцагчдад зориулсан боловсрол, сургалтын боломжууд
+        </p>
+
+    </div>
+
+    <div class="cards">
+
+        <div class="card">
+
+            <div class="card-icon">🎓</div>
+
+            <h3>Мэргэжлийн боловсрол</h3>
+
+            <p>
+                Мэргэжлийн ур чадвар эзэмшүүлж,
+                хөдөлмөрийн зах зээлд ажиллахад бэлтгэнэ.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="card-icon">⚙️</div>
+
+            <h3>Техникийн боловсрол</h3>
+
+            <p>
+                Техник, технологийн чиглэлээр мэдлэг,
+                чадвар эзэмших боломжтой.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="card-icon">💻</div>
+
+            <h3>Мэргэжлийн сургалт</h3>
+
+            <p>
+                Тодорхой мэргэжил, ур чадварыг
+                богино хугацаанд эзэмших сургалт.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- MISSION -->
+<section class="mission">
+
+    <h2>Эрхэм зорилго</h2>
+
+    <p>
+        Бүтээгч хөгжлийг эрхэмлэгч ЭКО сургууль байх.
+        Хөдөлмөрийн зах зээлийн эрэлт болон ажил олгогчийн
+        хэрэгцээнд нийцсэн сургалт, үйлчилгээг хөгжүүлж,
+        суралцагч, төгсөгчдийн мэдлэг, чадвар, төлөвшилд
+        бодит ахиц гаргана.
+    </p>
+
+</section>
+
+
+<!-- NEWS -->
+<section id="news">
+
+    <div class="section-title">
+
+        <h2>Мэдээ, мэдээлэл</h2>
+
+        <p>Сургуулийн үйл ажиллагаа</p>
+
+    </div>
+
+    <div class="cards">
+
+        <div class="card news-card">
+
+            <div class="news-card date">
+                Сургуулийн үйл ажиллагаа
+            </div>
+
+            <h3>
+                М-СИ-ЭС Холдинг компанитай хамтран ажиллана
+            </h3>
+
+            <p>
+                Нийгмийн хариуцлага болон төр, хувийн хэвшлийн
+                түншлэлийн хүрээнд хамтын ажиллагаа өргөжүүлж байна.
+            </p>
+
+        </div>
+
+
+        <div class="card news-card">
+
+            <div class="news-card date">
+                Бүтээлч сургууль
+            </div>
+
+            <h3>
+                Бүтээлч сургууль арга хэмжээ
+            </h3>
+
+            <p>
+                Багш, суралцагчдын бүтээлийн үзэсгэлэн болон
+                мэргэжлийн хөтөлбөрийн танилцуулга зохион байгуулав.
+            </p>
+
+        </div>
+
+
+        <div class="card news-card">
+
+            <div class="news-card date">
+                Элсэлт
+            </div>
+
+            <h3>
+                Элсэлтийн мэдээлэл
+            </h3>
+
+            <p>
+                Мэргэжлийн болон техникийн боловсролын
+                чиглэлээр элсэлт авах боломжтой.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ADMISSION -->
+<section class="admission" id="admission">
+
+    <div class="section-title">
+
+        <h2>Элсэлт</h2>
+
+        <p>Ирээдүйгээ өнөөдөр сонго</p>
+
+    </div>
+
+    <div class="admission-box">
+
+        <h3>Элсэгч танд</h3>
+
+        <ul>
+
+            <li>Мэргэжлийн боловсрол</li>
+
+            <li>Техникийн боловсрол</li>
+
+            <li>Мэргэжлийн сургалт</li>
+
+            <li>Түр сургалт</li>
+
+            <li>Цахим элсэлт</li>
+
+            <li>Элсэлтийн журам</li>
+
+            <li>Мэргэжлийн боловсролын 3 жилийн сургалт</li>
+
+        </ul>
+
+        <br>
+
+        <a href="file:///C:/Users/USER/OneDrive/Desktop/site/index.html#contact" class="btn btn-main">
+            Холбоо барих
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+
+    <div class="section-title">
+
+        <h2>Холбоо барих</h2>
+
+        <p>Бидэнтэй холбогдоорой</p>
+
+    </div>
+
+    <div class="contact-container">
+
+        <div class="contact-item">
+
+            <div class="card-icon">📍</div>
+
+            <h3>Хаяг</h3>
+
+            <p>
+                Хөвсгөл аймаг,<br>
+                Мөрөн сум, 13-р хороо
+            </p>
+
+        </div>
+
+
+        <div class="contact-item">
+
+            <div class="card-icon">📞</div>
+
+            <h3>Утас</h3>
+
+            <p>
+                +976 99382221<br>
+                +976 86922244<br>
+                +976 95009191
+            </p>
+
+        </div>
+
+
+        <div class="contact-item">
+
+            <div class="card-icon">✉️</div>
+
+            <h3>И-мэйл</h3>
+
+            <p>
+                polytechniccollege.kh@gmail.com
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- FOOTER -->
+<footer>
+
+    <h3>Хөвсгөл аймаг дахь Политехник коллеж</h3>
+
+    <p>
+        ШУТИС-ийн харьяа
+    </p>
+
+    <p>
+        © 2026 Бүх эрх хуулиар хамгаалагдсан.
+    </p>
+
+</footer>
+
+
+
+```</body></html>
